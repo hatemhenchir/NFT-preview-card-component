@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 2rem;
+  width: 300px;
+  height: auto;
+  box-shadow: -11px 10px 19px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: -11px 10px 19px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -11px 10px 19px -3px rgba(0,0,0,0.75);
+}
+.card-body {
+  padding: 2rem 0 0 0 !;
+}
+.image-top {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.main-image {
+  display: block;
+
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+  }
+  .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+  }
+  
+  .image-top:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .image-top:hover .overlay + .view {
+    display: block;
+  }
+.card-title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card-title:hover {
+  color: hsl(178, 100%, 50%);
+}
+span {
+  color: hsl(0, 0%, 100%);
+}
+span:hover {
+  color: hsl(178, 100%, 50%);
+}
+.eth {
+  color: hsl(178, 100%, 50%);
+}
+.card-text {
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.author img {
+  width: 25px;
+}
+.author p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 14.5px;
+}
+
+p {
+  display: inline;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+a {
+  text-decoration: none;
+}
+@media all and  (min-width:425px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card{
+        width:25rem
+    }
+    
+}
+@media all  and  (min-width:1024px){
+    
+    .card{
+        width: 30rem;
+    }
+    .card-title{
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
