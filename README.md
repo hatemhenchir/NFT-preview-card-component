@@ -34,8 +34,8 @@ Mobile version
 
 ### Links
 
-- Solution URL: [Code on GitHub]()
-- Live Site URL: [GitHub Pages Live URL]()
+- Solution URL: [Code on GitHub](https://github.com/hatemhenchir/NFT-preview-card-component/)
+- Live Site URL: [GitHub Pages Live URL](https://hatemhenchir.github.io/NFT-preview-card-component/)
 
 ## My process
 
